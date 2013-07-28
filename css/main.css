@@ -1,0 +1,144 @@
+#body{
+    width: 1000px;
+    margin: 0 auto;
+	font-family: Microsoft JhengHei, "微軟正黑體", Apple LiSung Light,WenQuanYi Micro Hei;
+	background-image: url("http://radio.pinewave.tw/image/background.jpg");
+
+}
+#header{
+    width: 1000px;
+    height: 365px;
+}
+#top_img{
+    width: 1000px;
+    height: 365px;
+    background-image: url('/file/img/main/header.png');
+	background-repeat: no-repeat;
+	background-position: center;
+    float: left;
+	overflow: visible;
+}
+#top_nav{
+	width: 1000px;
+	height: 106px;
+	padding-left: 40px;
+	top: -75px;
+	margin-top: -75px;
+	position: relative;
+	text-align: center;
+}
+#top_nav_head{
+	width: 125px;
+	height: 106px;
+	float: left;
+	background-image: url('/file/img/main/listen.png');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	overflow: visible;
+	position: relative;
+}
+.top_nav_item{
+    width: 125px;
+    height: 106px;
+    float: left;
+	background-image: url('/file/img/main/car.png');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.top_nav_word{
+	margin: 0;
+	padding-top: 60px;
+}
+.box_line{
+	width: 1000px;
+	height: 22px;
+	background-color: rgb(112,140,14);
+	position: relative;
+}
+
+#footer{
+    width: 1000px;
+    height: 243px;
+    float: left;
+	background-image: url('/file/img/main/footer.png');
+}
+#bot_chooser{
+    width: 583px;
+    height: 81px;
+	margin-left: 210px;
+	margin-top: 33px;
+    float: left;
+}
+.footer_ch{
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#bot_ch1{
+    width: 145px;
+    height: 81px;
+    float: left;
+    background-image: url('/file/img/main/footer_ch1.png');
+}
+#bot_ch2{
+    width: 146px;
+    height: 81px;
+    float: left;
+	background-image: url('/file/img/main/footer_ch2.png');
+}
+#bot_ch3{
+    width: 146px;
+    height: 81px;
+    float: left;
+	background-image: url('/file/img/main/footer_ch3.png');
+}
+#bot_ch4{
+    float: left;
+    width: 146px;
+    height: 81px;
+	background-image: url('/file/img/main/footer_ch4.png');
+}
+
+#container{
+	background-image: url('/file/img/main/content_bg.png');
+}
+
+
+/*Chat room=============================================*/
+#bkfade
+{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 500px;
+	/*background-image: url("/file/img/main/bkfade.png");*/
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+#chatbox
+{
+	position: fixed;
+	left: -630px;
+	top: 120px;
+	width: 660px;
+}
+
+#chatBu
+{
+	float: right;
+	width: 20px;
+	height: 376px;
+	border: solid 2px #000;
+	background-color: #cfc;
+	font-size: 14pt;
+	cursor: pointer;
+}
+
+#chatBu:hover
+{
+	background-color: #beb;
+}
+
+/*-------------------------------------------------------------------------------------------*/
