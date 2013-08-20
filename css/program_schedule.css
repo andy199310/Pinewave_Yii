@@ -1,0 +1,106 @@
+#program_cnt{
+}
+
+#program_cnt_right{
+	width: 62%;
+	margin-right: 3%;
+	margin-top: 3%;
+	float: right;
+	padding: 25px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 15px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+#previous_month{
+	cursor: pointer;
+}
+
+#next_month{
+	cursor: pointer;
+}
+
+#previous_month:hover{
+	color: yellow;
+}
+
+#next_month:hover{
+	color: yellow;
+}
+
+div.h2 .date{
+	padding: 0px 5px;
+	font-size: 24pt;
+}
+
+#schedule_month{
+	float: left;
+	margin-right: 400px;
+}
+
+#schedule{
+	margin: 1px;
+	width: 590px;
+	height: 433px;
+	text-align: center;
+}
+
+#schedule td
+{
+	width: 100px;
+	height: 100px;
+	background-color: #ccc;
+	-webkit-transition: background-color 0.2s;
+	-moz-transition: background-color 0.2s;
+	-o-transition: background-color 0.2s;
+}
+
+#schedule td.aru
+{
+	background-color: #67999A;
+}
+
+#schedule td:hover
+{
+	background-color: #9cc;
+}
+
+.head
+{
+	color: #000;
+	font-weight: bold;
+}
+
+.head .h1
+{
+	color: #fff;
+}
+
+#schedule .date
+{
+	height: 25px;
+	color: #fff;
+	font-size: 10pt;
+	line-height: 25px;
+}
+
+#schedule .p1
+{
+	height: 75px;
+	line-height: 20px;
+}
+
+#schedule .p1 a
+{
+	color: #c00;
+	font-size: 10pt;
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-o-transition: color 0.2s;
+}
+
+#schedule .p1 a:hover
+{
+	color: #000;
+}

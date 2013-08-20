@@ -1,0 +1,33 @@
+#bulletin_main{
+	padding-top: 30px;
+	height: 100%;
+}
+
+#bulletin_title{
+	position: relative;
+	left: 30px;
+	font-size: 50px;
+	background-color: rgba(255, 255, 255, 0.3);
+	display: inline-block;
+	border-radius: 12px;
+	padding: 5px 10px;
+}
+
+#bulletin_cnt{
+	padding: 20px;
+	text-align: left;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 15px;
+	margin: 30px 30px 20px;
+}
+
+#bulletin_back_link{
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+
+#bulletin_bottom{
+	text-align: right;
+	margin-top: 20px;
+}

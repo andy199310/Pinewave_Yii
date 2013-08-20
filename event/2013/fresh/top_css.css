@@ -1,0 +1,41 @@
+#body{
+	width: 1000px;
+	margin: 0px auto;
+	background-color: #d9821f;
+}
+#all_container{
+	width: 1000px;
+	margin: 0px auto;
+}
+#top_container{
+	width: 1000px;
+	height: 380px;
+}
+#top_img{
+	width: 1000px;
+	height: 268px;
+	background-image: url(img/top1.png);
+	float: left;
+}
+#top_choser{
+	width: 1000px;
+	height: 112px;
+}
+#top_ch1{
+	width: 834px;
+	height: 112px;
+	background-image: url(img/top2.png);
+	float: left;
+}
+#top_ch2{
+	width: 166px;
+	height: 112px;
+	background-image: url(img/board1.png);
+	float: left;
+}
+#top_ch2:hover{
+	width: 166px;
+	height: 112px;
+	background-image: url(img/board2.png);
+	float: left;
+}

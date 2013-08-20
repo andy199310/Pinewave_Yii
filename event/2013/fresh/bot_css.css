@@ -1,0 +1,94 @@
+/*bot*/
+#bot_container{
+	width: 1000px;
+	height: 105px;
+	float: left;
+}
+#bot_up{
+	width: 1000px;
+	height: 45px;
+}
+#bot_ch1{
+	width: 40px;
+	height: 45px;
+	float: left;
+	background-image: url(img/cut2/1.png);
+}
+#bot_ch2{
+	width: 189px;
+	height: 45px;
+	float: left;
+	background-image: url(img/cut2/2.png);
+}
+#bot_ch2:hover{
+	width: 189px;
+	height: 45px;
+	float: left;
+	background-image: url(img/cut2/2-1.png);
+}
+#bot_ch3{
+	width: 74px;
+	height: 45px;
+	float: left;
+	background-image: url(img/cut2/3.png);
+}
+#bot_ch4{
+	width: 154px;
+	height: 45px;
+	float: left;
+	background-image: url(img/cut2/4.png);
+}
+#bot_ch4:hover{
+	width: 154px;
+	height: 45px;
+	float: left;
+	background-image: url(img/cut2/4-1.png);
+}
+#bot_ch5{
+	width: 79px;
+	height: 45px;
+	float: left;
+	background-image: url(img/cut2/5.png);
+}
+#bot_ch6{
+	width: 193px;
+	height: 45px;
+	float: left;
+	background-image: url(img/cut2/6.png);
+}
+#bot_ch6:hover{
+	width: 193px;
+	height: 45px;
+	float: left;
+	background-image: url(img/cut2/6-1.png);
+}
+#bot_ch7{
+	width: 61px;
+	height: 45px;
+	float: left;
+	background-image: url(img/cut2/7.png);
+}
+#bot_ch8{
+	width: 188px;
+	height: 45px;
+	float: left;
+	background-image: url(img/cut2/8.png);
+}
+#bot_ch8:hover{
+	width: 188px;
+	height: 45px;
+	float: left;
+	background-image: url(img/cut2/8-1.png);
+}
+#bot_ch9{
+	width: 22px;
+	height: 45px;
+	float: left;
+	background-image: url(img/cut2/9.png);
+}
+#bot_down{
+	width: 1000px;
+	height: 62px;
+	float: left;
+	background-image: url(img/cut2/10.png);
+}

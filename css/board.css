@@ -1,0 +1,234 @@
+#container{
+	height: 100%;
+}
+
+#postButton
+{
+	margin: auto auto 20px;
+	width: 100px;
+	height: 30px;
+	background-color: #696;
+	color: #fff;
+	font-size: 14pt;
+	text-align: center;
+	line-height: 30px;
+	box-shadow: 2px 2px 2px #999;
+	-webkit-box-shadow: 2px 2px 2px #999;
+	cursor: pointer;
+}
+
+#board_main{
+	padding-top: 40px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+.board
+{
+	margin: auto;
+	margin-bottom: 30px;
+	padding: 10px 0px 15px 0px;
+	width: 550px;
+	background-color: #bd8;
+	box-shadow: 2px 2px 2px #999;
+	-moz-box-shadow: 2px 2px 2px #999;
+}
+
+.board .title
+{
+	border-bottom: solid 2px #c60;
+}
+
+.board .title .author
+{
+	padding: 0px 0px 5px 10px;
+}
+
+.board .title .respondButton
+{
+	float: right;
+	margin-right: 10px;
+	width: 90px;
+	height: 20px;
+	background-color: #c93;
+	color: #000;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+.board .content
+{
+	padding: 10px 30px 5px 30px;
+}
+
+#post
+{
+	display: none;
+}
+
+#post input[type=text]
+{
+	padding: 0px;
+	width: 200px;
+	border: solid 0px #dfa;
+	background-color: #dfa;
+	font-size: 12pt;
+}
+
+#post input[type=submit]
+{
+	margin-left: 475px;
+	padding: 0px;
+	width: 60px;
+	height: 25px;
+	border: solid 0px #c93;
+	background-color: #c93;
+	color: #000;
+	font-size: 12pt;
+}
+
+#post input[name=code]
+{
+	width: 75px;
+}
+
+#post img
+{
+	margin-bottom: -5px;
+}
+
+#post textarea
+{
+	padding: 0px;
+	width: 490px;
+	height: 175px;
+	border: solid 0px #dfa;
+	background-color: #dfa;
+	font-size: 12pt;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+.respond
+{
+	margin: 15px 0px 0px 140px;
+	padding: 5px 0px 5px 0px;
+	width: 400px;
+	background-color: #cc6;
+}
+
+.respond .title
+{
+	border-bottom: solid 1px #c93;
+}
+
+.respond .title .author
+{
+	padding: 0px 0px 5px 10px;
+}
+
+.respond .content
+{
+	padding: 10px 30px 5px 30px;
+}
+
+.active
+{
+	display: none;
+}
+
+.active input[type=text]
+{
+	padding: 0px;
+	width: 200px;
+	border: solid 0px #ee8;
+	background-color: #ee8;
+	font-size: 12pt;
+}
+
+.active input[type=submit]
+{
+	margin-left: 325px;
+	padding: 0px;
+	width: 60px;
+	height: 25px;
+	border: solid 0px #993;
+	background-color: #993;
+	color: #fff;
+	font-size: 12pt;
+}
+
+.active input[name=code]
+{
+	width: 75px;
+}
+
+.active img
+{
+	margin-bottom: -5px;
+}
+
+.active textarea
+{
+	padding: 0px;
+	width: 340px;
+	height: 125px;
+	border: solid 0px #ee8;
+	background-color: #ee8;
+	font-size: 12pt;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+ul.pagination
+{
+	float: right;
+	margin: 30px 50px 50px 0px;
+}
+
+ul.pagination li
+{
+	display: inline;
+	margin: 1px 3px 1px 3px;
+}
+
+ul.pagination li.disabled
+{
+	padding: 1px 5px 1px 5px;
+	border: solid 1px #ca6;
+	background-color: #fda;
+	color: #ca6;
+}
+
+ul.pagination li.current
+{
+	padding: 1px 5px 1px 5px;
+	border: solid 1px #963;
+	background-color: #f96;
+	color: #000;
+	font-weight: bold;
+}
+
+ul.pagination li.total
+{
+	padding: 1px 5px 1px 5px;
+	border: solid 1px #c96;
+	background-color: #fda;
+	color: #000;
+}
+
+ul.pagination li a
+{
+	padding: 1px 5px 1px 5px;
+	border: solid 1px #963;
+	background-color: #fc9;
+	color: #963;
+}
+
+ul.pagination a:hover
+{
+	border: solid 1px #963;
+	background-color: #ff6;
+	color: #963;
+}

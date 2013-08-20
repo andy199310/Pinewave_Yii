@@ -1,0 +1,406 @@
+#mid_container{
+	width: 1000px;
+	height: 1669px;
+}
+#mid_top{
+	width: 1000px;
+	height: 470px;
+}
+#mid_mid{
+	width: 1000px;
+	height: 601px;
+}
+#mid_bot{
+	width: 1000px;
+	height: 598px;
+}
+
+/*mid_top*/
+
+#mid_top1{
+	width: 1000px;
+	height: 281px;
+}
+#midtop_ch1{
+	width: 84px;
+	height: 281px;
+	background-image: url(img/cut1/1.png);
+	float: left;
+}
+#midtop_ch2{
+	width: 255px;
+	height: 281px;
+	background-image: url(img/cut1/2.png);
+	float: left;
+}
+#midtop_ch2:hover{
+	width: 255px;
+	height: 281px;
+	background-image: url(img/cut1/2-1.png);
+	float: left;
+}
+#midtop_ch3{
+	width: 661px;
+	height: 281px;
+	background-image: url(img/cut1/3.png);
+	float: left;
+}
+#mid_top2{
+	width: 1000px;
+	height: 189px;
+	background-image: url(img/mid.png);
+}
+
+/*day1*/
+
+#day1{
+	width: 1000px;
+	left: 134px;
+}
+#day1_left{
+	width: 98px;
+	height: 107px;
+	float: left;
+	background-image: url(img/day1/1.png);
+}
+#day1_mid{
+	width: 96px;
+	height: 107px;
+	float: left;
+	background-image: url(img/day1/2.png);
+}
+#day1_mid:hover{
+	width: 96px;
+	height: 107px;
+	float: left;
+	background-image: url(img/day1/2-1.png);
+}
+#day1_right{
+	width: 806px;
+	height: 107px;
+	float: left;
+}
+#day1_right_up{
+	width: 806px;
+	height: 44px;
+	float: left;
+	background-image: url(img/day1/3.png);
+}
+#day1_right_down{
+	width: 806px;
+	height: 63px;
+}
+#day1_right_down_1{
+	width: 70px;
+	height: 63px;
+	float: left;
+	background-image: url(img/day1/4.png);
+	cursor: pointer;
+}
+#day1_right_down_1:hover{
+	width: 70px;
+	height: 63px;
+	float: left;
+	background-image: url(img/day1/4-1.png);
+	cursor: pointer;
+}
+#day1_right_down_2{
+	width: 736px;
+	height: 63px;
+	float: left;
+	background-image: url(img/day1/5.png);
+}
+#day1_bot{
+	width: 1000px;
+	height: 27px;
+	float: left;
+	background-image: url(img/day1/6.png);
+}
+
+/*day2*/
+
+#day2{
+	width: 1000px;
+	left: 132px;
+}
+#day2_left{
+	width: 97px;
+	height: 116px;
+	float: left;
+	background-image: url(img/day2/1.png);
+}
+#day2_mid{
+	width: 107px;
+	height: 116px;
+	float: left;
+	background-image: url(img/day2/2.png);
+}
+#day2_mid:hover{
+	width: 107px;
+	height: 116px;
+	float: left;
+	background-image: url(img/day2/2-1.png);
+}
+#day2_right{
+	width: 796px;
+	height: 116px;
+	float: left;
+}
+#day2_right_up{
+	width: 796px;
+	height: 44px;
+	float: left;
+	background-image: url(img/day2/3.png);
+}
+#day2_right_down{
+	width: 796px;
+	height: 72px;
+}
+#day2_right_down_1{
+	width: 52px;
+	height: 72px;
+	float: left;
+	background-image: url(img/day2/4.png);
+	cursor: pointer;
+}
+#day2_right_down_1:hover{
+	width: 52px;
+	height: 72px;
+	float: left;
+	background-image: url(img/day2/4-1.png);
+	cursor: pointer;
+}
+#day2_right_down_2{
+	width: 744px;
+	height: 72px;
+	float: left;
+	background-image: url(img/day2/5.png);
+}
+#day2_bot{
+	width: 1000px;
+	height: 18px;
+	float: left;
+	background-image: url(img/day2/6.png);
+}
+
+/*day3*/
+
+#day3{
+	width: 1000px;
+	left: 113px;
+}
+#day3_left{
+	width: 99px;
+	height: 113px;
+	float: left;
+	background-image: url(img/day3/1.png);
+}
+#day3_mid{
+	width: 99px;
+	height: 113px;
+	float: left;
+	background-image: url(img/day3/2.png);
+}
+#day3_mid:hover{
+	width: 99px;
+	height: 113px;
+	float: left;
+	background-image: url(img/day3/2-1.png);
+}
+#day3_right{
+	width: 801px;
+	height: 113px;
+	float: left;
+}
+#day3_right_up{
+	width: 801px;
+	height: 45px;
+	float: left;
+	background-image: url(img/day3/3.png);
+}
+#day3_right_down{
+	width: 801px;
+	height: 68px;
+}
+#day3_right_down_1{
+	width: 59px;
+	height: 68px;
+	float: left;
+	background-image: url(img/day3/4.png);
+	cursor: pointer;
+}
+#day3_right_down_1:hover{
+	width: 59px;
+	height: 68px;
+	float: left;
+	background-image: url(img/day3/4-1.png);
+	cursor: pointer;
+}
+#day3_right_down_2{
+	width: 742px;
+	height: 68px;
+	float: left;
+	background-image: url(img/day3/5.png);
+}
+#day3_bot{
+	width: 1000px;
+	height: 20px;
+	float: left;
+	background-image: url(img/day3/6.png);
+}
+
+/*day4*/
+
+#day4{
+	width: 1000px;
+	left: 111px;
+}
+#day4_left{
+	width: 99px;
+	height: 111px;
+	float: left;
+	background-image: url(img/day4/1.png);
+}
+#day4_mid{
+	width: 99px;
+	height: 111px;
+	float: left;
+	background-image: url(img/day4/2.png);
+}
+#day4_mid:hover{
+	width: 99px;
+	height: 111px;
+	float: left;
+	background-image: url(img/day4/2-1.png);
+}
+#day4_right{
+	width: 801px;
+	height: 111px;
+	float: left;
+}
+#day4_right_up{
+	width: 801px;
+	height: 49px;
+	float: left;
+	background-image: url(img/day4/3.png);
+}
+#day4_right_down{
+	width: 801px;
+	height: 62px;
+}
+#day4_right_down_1{
+	width: 61px;
+	height: 62px;
+	float: left;
+	background-image: url(img/day4/4.png);
+	cursor: pointer;
+}
+#day4_right_down_1:hover{
+	width: 61px;
+	height: 62px;
+	float: left;
+	background-image: url(img/day4/4-1.png);
+	cursor: pointer;
+}
+#day4_right_down_2{
+	width: 740px;
+	height: 62px;
+	float: left;
+	background-image: url(img/day4/5.png);
+}
+#day4_bot{
+	width: 1000px;
+	height: 24px;
+	float: left;
+	background-image: url(img/day4/6.png);
+}
+
+/*day5*/
+
+#day5{
+	width: 1000px;
+	left: 111px;
+}
+#day5_left{
+	width: 99px;
+	height: 111px;
+	float: left;
+	background-image: url(img/day5/1.png);
+}
+#day5_mid{
+	width: 100px;
+	height: 111px;
+	float: left;
+	background-image: url(img/day5/2.png);
+}
+#day5_mid:hover{
+	width: 100px;
+	height: 111px;
+	float: left;
+	background-image: url(img/day5/2-1.png);
+}
+#day5_right{
+	width: 801px;
+	height: 111px;
+	float: left;
+}
+#day5_right_up{
+	width: 801px;
+	height: 48px;
+	float: left;
+	background-image: url(img/day5/3.png);
+}
+#day5_right_down{
+	width: 801px;
+	height: 63px;
+}
+#day5_right_down_1{
+	width: 61px;
+	height: 63px;
+	float: left;
+	background-image: url(img/day5/4.png);
+	cursor: pointer;
+}
+#day5_right_down_1:hover{
+	width: 61px;
+	height: 63px;
+	float: left;
+	background-image: url(img/day5/4-1.png);
+	cursor: pointer;
+}
+#day5_right_down_2{
+	width: 740px;
+	height: 63px;
+	float: left;
+	background-image: url(img/day5/5.png);
+}
+
+#mid_bot{
+	float: left;
+	width: 1000px;
+	height: 598px;
+	background-image: url(img/mid_bot.png);
+}
+
+.wait{
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	background-color: green;
+	margin-left: 10px;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+.wait_l{
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	background-color: green;
+	margin-left: 23px;
+	margin-top: 30px;
+	font-size: 20px;
+	text-align: center;
+
+}

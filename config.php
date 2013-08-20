@@ -27,6 +27,7 @@ return array(
 				''                                          => array('site/index', 'urlSuffix' => ''),
 				'<action:\w+>'                              => 'site/<action>',
 				'<action:\w+>'                              => 'site/<action>',
+				'<action:\w+>/<id:\d+>'                     => 'site/<action>',
 				// '<controller:\w+>/<id:\d+>/<title:.+>'     => '<controller>/view',
 				// '<controller:\w+>/<id:\d+>'                 => '<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'        => '<controller>/<action>',
@@ -64,6 +65,12 @@ return array(
 		),
 	),
 	'params'            => array(
+		'event' => array(
+			'active' => true,
+			'again_time' => 1800,
+			'url' => 'event/2013/fresh/'),
+
+		'programImgPath' => '/file/img/program/bar/'
 
 	),
 );

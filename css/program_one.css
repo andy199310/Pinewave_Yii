@@ -1,0 +1,82 @@
+
+#program_cnt{
+}
+
+#program_cnt_right{
+	width: 70%;
+	margin-right: 3%;
+	margin-top: 3%;
+	float: right;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 15px;
+}
+
+.program_cross{
+	height: 2px;
+	width: 100%;
+	background-color: #a66;
+	clear: both;
+}
+
+#program_one_name{
+	position: relative;
+	left: 30px;
+	font-size: 1.5em;
+}
+
+#program_one_dj{
+	margin: 2px 0px 20px 100px;
+	color: #c66;
+}
+
+#program_one_pic{
+	width: 586px;
+	height: 182px;
+	margin: 0px 10px 10px 8px;
+}
+
+#program_one_intro{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#program_one_choose_word{
+	margin-top: 20px;
+	font-size: 1.5em;
+	position: relative;
+	left: 30px;
+}
+
+#program_one_choose{
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	height: 100px;
+	list-style: none;
+}
+
+#program_one_choose li{
+	float: left;
+	margin: 5px;
+	width: 50px;
+	height: 50px;
+	background-image: url("/file/img/program/date.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 11pt;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+}
+
+#about_history_cnt{
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: left;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin-top: 30px;
+	border-radius: 15px;
+}

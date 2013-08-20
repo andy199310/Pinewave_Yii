@@ -4,11 +4,18 @@ class Html extends CHtml{
 		$bUrl = Yii::app()->request->baseUrl;
 		$imgPath = $bUrl.'/file/img/main/'.$name.'.png';
 
-
-		$imgTag = CHtml::tag('img', array(
-			'src' => $imgPath,
-			'class' => 'top_nav_word',
-		), '', false);
+		if($name != 'fb'){
+			$imgTag = CHtml::tag('img', array(
+				'src' => $imgPath,
+				'class' => 'top_nav_word',
+			), '', false);
+		}else{
+			$imgTag = CHtml::tag('img', array(
+				'src' => $imgPath,
+				'class' => 'top_nav_word',
+				'style' => 'margin-top: 47px'
+			), '', false);
+		}
 
 //		$carTag = CHtml::tag('div', array(
 //			'src' => $carPath,

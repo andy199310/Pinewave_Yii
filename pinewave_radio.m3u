@@ -1,0 +1,12 @@
+#EXTM3U
+
+#EXTINF:-1, Pinewave Radio
+http://broadcast.pinewave.tw:8000
+
+#EXTINF:-1, Pinewave Radio
+http://140.115.183.156:8000
+http://140.115.191.14:8000
+http://140.115.31.50:8000
+
+#EXTINF:-1, Pinewave Radio
+http://140.115.183.157:3690
