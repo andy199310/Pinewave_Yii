@@ -8,7 +8,9 @@
 (function($)
 {
 	$.schedule = function(){
+		console.log($('#next_month').html());
 		$("#next_month").click(function(){
+			console.log('hi');
 			var dataTag = $('#schedule_month');
 			var year = parseInt(dataTag.attr('y'));
 			var month = parseInt(dataTag.attr('m'));

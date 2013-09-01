@@ -12,6 +12,8 @@ class AdminController extends CController{
 	public function actionIndex(){
 		if($this->checkLogin()){
 
+		}else{
+
 		}
 	}
 
@@ -28,6 +30,8 @@ class AdminController extends CController{
 					//Login successful
 					Yii::app()->user->login();
 				}
+			}else{
+				echo 'login page';
 			}
 		}
 	}
@@ -40,7 +44,7 @@ class AdminController extends CController{
 		if(!Yii::app()->user->isGuest){
 			return true;
 		}else{
-			$this->redirect($this->createUrl('login'));
+			$this->redirect('/index.php/admin/login');
 		}
 		return false;
 	}

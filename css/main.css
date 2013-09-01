@@ -69,6 +69,19 @@
 	position: relative;
 }
 
+#listen_now{
+	position: fixed;
+	background-image: url('/file/img/main/listen_now.png');
+	width: 100px;
+	height: 155px;
+	background-size: 100px;
+	z-index: 50;
+	float: right;
+	right: 5px;
+	top: 33%;
+	cursor: pointer;
+}
+
 #footer{
     width: 1000px;
     height: 243px;
@@ -129,6 +142,7 @@
 	top: 0;
 	width: 100%;
 	height: 500px;
+	z-index: -1;
 	/*background-image: url("/file/img/main/bkfade.png");*/
 }
 

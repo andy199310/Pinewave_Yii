@@ -1,6 +1,6 @@
 window.onload = function()
 {
-	document.getElementsByTagName('body')[0].innerHTML += '<div id="chatbox"><div id="chatBu">顯示或隱藏聊天視窗</div></div>';
+	document.getElementById('bkfade').innerHTML += '<div id="chatbox"><div id="chatBu">顯示或隱藏聊天視窗</div></div>';
 
 	chatbox_id = 329;
 	chatbox_width = 630;
@@ -22,9 +22,13 @@ window.onload = function()
 	document.getElementById('chatbox').appendChild(i);
 	document.getElementById('chatBu').onclick = function()
 	{
-		if(document.getElementById('chatbox').style.left == '0px')
+		if(document.getElementById('chatbox').style.left == '0px'){
 			document.getElementById('chatbox').style.left = '-630px';
-		else
+			document.getElementById('bkfade').style.zIndex = '-1';
+		}
+		else{
 			document.getElementById('chatbox').style.left = '0px';
+			document.getElementById('bkfade').style.zIndex = '10';
+		}
 	}
 }

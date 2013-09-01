@@ -251,3 +251,7 @@
 	margin-top: 5px;
 	color: white;
 }
+
+.bulletin_link a:hover{
+	color: yellowgreen;
+}

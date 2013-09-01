@@ -1,0 +1,40 @@
+#main
+{
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 800px;
+}
+
+.member
+{
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	width: 178px;
+	height: 200px;
+	color: #666;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: solid 1px #ccc;
+}
+
+.member .name
+{
+	color: #069;
+	font-size: 16pt;
+}
+
+.member .birthday
+{
+	font-size: 15pt;
+}
+
+.member div
+{
+	clear: both;
+}
+
+.member .item
+{
+	clear: right;
+	color: #c36;
+}

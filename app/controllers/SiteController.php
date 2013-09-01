@@ -85,7 +85,7 @@ class SiteController extends CController{
 	}
 
 	public function actionStaff(){
-		$this->render('about');
+		$this->render('staff');
 	}
 
 	//Redirect to fb

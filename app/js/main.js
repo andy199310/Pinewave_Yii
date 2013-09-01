@@ -7,7 +7,7 @@
 (function($)
 {
 	$(window).load(function(){
-		var train = $('#top_nav_head');
+		/*var train = $('#top_nav_head');
 
 		train.mouseover(function(){
 			console.log('s');
@@ -38,6 +38,6 @@
 				left: '0' + 'px'
 			});
 
-		})
+		})*/
 	});
 })(jQuery);

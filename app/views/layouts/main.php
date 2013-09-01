@@ -4,7 +4,7 @@ $cs->registerCSSFile(Yii::app()->request->baseUrl.'/css/main.css');
 //$cs->registerCSSFile(Yii::app()->request->baseUrl.'/css/bootstrap.css');
 $cs->registerCoreScript('jquery');
 //$cs->registerCoreScript('jquery.ui');
-//$cs->registerScriptFile(Yii::app()->request->baseUrl.'/app/js/hahapo.js');
+$cs->registerScriptFile(Yii::app()->request->baseUrl.'/app/js/hahapo.js');
 $cs->registerScriptFile(Yii::app()->request->baseUrl.'/app/js/main.js');
 ?>
 
@@ -17,7 +17,8 @@ $cs->registerScriptFile(Yii::app()->request->baseUrl.'/app/js/main.js');
 	</head>
 
 	<body id="body">
-	<div id="bkfade"></div>
+		<div id="bkfade"></div>
+		<a href="/pinewave_radio.m3u" target="_blank"><div id="listen_now"></div></a>
 		<header id="header">
 			<div id="top_img">
 				<div id="top_link" onclick="window.location='http://radio.pinewave.tw';"></div>
