@@ -8,7 +8,7 @@
 
 class SiteController extends CController{
 
-	public $layout = 'main';
+	public $layout = 'site';
 
 	public function actionIndex(){
 
@@ -24,8 +24,10 @@ class SiteController extends CController{
 			}
 		}
 		$programModel = new ProgramModel;
-		$data['nextProgram'] = $programModel->getProgramDetailByProgramId($programModel->getNextProgramId()['program']);
-		$data['previousProgram'] = $programModel->getProgramDetailByProgramId($programModel->getPreviousProgramId()['program']);
+		$tmp = $programModel->getNextProgramId();
+		$data['nextProgram'] = $programModel->getProgramDetailByProgramId($tmp['program']);
+		$tmp = $programModel->getPreviousProgramId();
+		$data['previousProgram'] = $programModel->getProgramDetailByProgramId($tmp['program']);
 		$bulletinModel = new BulletinModel;
 		$data['bulletinData'] = $bulletinModel->getBulletinMainByCount();
 		$this->render('index', $data);

@@ -38,11 +38,7 @@ $cs->registerScriptFile(Yii::app()->request->baseUrl.'/app/js/main.js');
 		</div>
 		<div class="box_line"></div>
 
-		<div id="container">
-
 			<?php echo $content; ?>
-
-		</div>
 
 		<div class="box_line"></div>
 

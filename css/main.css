@@ -2,7 +2,7 @@
     width: 1000px;
     margin: 0 auto;
 	font-family: Microsoft JhengHei, "微軟正黑體", Apple LiSung Light,WenQuanYi Micro Hei;
-	background-image: url("http://radio.pinewave.tw/image/background.jpg");
+	background-image: url('/file/img/main/background.jpg');
 
 }
 #header{

@@ -404,3 +404,41 @@
 	text-align: center;
 
 }
+
+/*Chat room=============================================*/
+#bkfade
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 500px;
+	z-index: -1;
+	/*background-image: url("/file/img/main/bkfade.png");*/
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+#chatbox
+{
+	position: fixed;
+	left: -630px;
+	top: 120px;
+	width: 660px;
+}
+
+#chatBu
+{
+	float: right;
+	width: 20px;
+	height: 376px;
+	border: solid 2px #000;
+	background-color: #cfc;
+	font-size: 14pt;
+	cursor: pointer;
+}
+
+#chatBu:hover
+{
+	background-color: #beb;
+}

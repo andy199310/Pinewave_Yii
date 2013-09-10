@@ -13,6 +13,8 @@ ini_set("display_errors", "On");
 
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL', 3);
 
+defined('WEB_BASE') or define('WEB_BASE', dirname(__FILE__));
+
 require_once(require_once('pinewave.php'));
 
 Yii::createWebApplication('config.php')->run();

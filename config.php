@@ -8,7 +8,8 @@ return array(
 	'preload'   => array('log', 'security'),
 	'import'    => array(
 		'application.models.*',
-		'application.components.*'
+		'application.components.*',
+		'application.extensions.*',
 	),
 	'components'=> array(
 		'user'          => array(
@@ -26,11 +27,11 @@ return array(
 			'rules'             => array(
 				''                                          => array('site/index', 'urlSuffix' => ''),
 				'<action:\w+>'                              => 'site/<action>',
-				'<action:\w+>'                              => 'site/<action>',
 				'<action:\w+>/<id:\d+>'                     => 'site/<action>',
 				// '<controller:\w+>/<id:\d+>/<title:.+>'     => '<controller>/view',
-				// '<controller:\w+>/<id:\d+>'                 => '<controller>/view',
+				//'<controller:\w+>'                			 => '<controller>/index',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'        => '<controller>/<action>',
+				'<controller:\w+>/<action:\w+>/<id:\d+>/<vid:\d+>'        => '<controller>/<action>',
 				'<controller:\w+>/<action:\w+>/<select:\w+>'    => '<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'                 => '<controller>/<action>'
 			),
@@ -70,7 +71,8 @@ return array(
 			'again_time' => 1800,
 			'url' => 'event/2013/fresh/'),
 
-		'programImgPath' => '/file/img/program/bar/'
+		'programFilePath' => WEB_BASE . '/file/tmp_program/',
+		'programImgPath' => '/file/img/program/bar/',
 
 	),
 );

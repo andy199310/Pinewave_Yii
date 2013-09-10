@@ -1,25 +1,25 @@
 <?php
 $mainData = array(
 	'1' => 	array(
-		'id' => '',
-		'link' => 'http://google.com',
-		'time' => '2013-09-12 21:00:00'),
+		'id' => '500',
+		'link' => 'https://docs.google.com/forms/d/19Uaavc7r0bACw8loa4bASFfqK2mqxdyjlofXAoqD4qc',
+		'time' => '2013-09-02 21:00:00'),
 	'2' => array(
-		'id' => '',
-		'link' => 'http://www.ncu.edu.tw',
-		'time' => '2013-09-13 21:00:00'),
+		'id' => '501',
+		'link' => 'https://docs.google.com/forms/d/1wVYPZv7CamBNppSqdqP3xISnqh-6TGGW1ng9WKucJ34',
+		'time' => '2013-09-03 21:00:00'),
 	'3' => array(
-		'id' => '',
-		'link' => 'http://www.ncu.edu.tw',
-		'time' => '2013-09-14 21:00:00'),
+		'id' => '502',
+		'link' => 'https://docs.google.com/forms/d/1rM0FjQRpz1zyd-Gl1V86yF532XJmk4cfe0_Hmc3WOW0',
+		'time' => '2013-09-04 21:00:00'),
 	'4' => array(
-		'id' => '',
-		'link' => 'http://www.ncu.edu.tw',
-		'time' => '2013-09-15 21:00:00'),
+		'id' => '503',
+		'link' => 'https://docs.google.com/forms/d/1PA6lvXdcB5qwosxfoEOFdrA5ijg-AuZ8RZcdXIlyqWA',
+		'time' => '2013-09-05 21:00:00'),
 	'5' => array(
-		'id' => '',
-		'link' => 'http://www.ncu.edu.tw',
-		'time' => '2013-09-16 21:00:00'),
+		'id' => '504',
+		'link' => 'https://docs.google.com/forms/d/1XwvnjvZI1B12BMb0LhnxVsHQt2sL72InfJGaNsiBHMs',
+		'time' => '2013-09-06 21:00:00'),
 );
 
 
@@ -57,6 +57,7 @@ foreach($mainData as $key => $pro){
 	<script src="player.js"></script>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="hahapo.js"></script>
 	<script src="js.js"></script>
 	<script>
 		data=<?=json_encode($data)?>;
@@ -64,6 +65,7 @@ foreach($mainData as $key => $pro){
 	</script>
 </head>
 <body id="body">
+<div id="bkfade"></div>
 	<div id="top_container">
 		<div id="top_img">
 
@@ -77,7 +79,7 @@ foreach($mainData as $key => $pro){
 		<div id="mid_top">
 			<div id="mid_top1">
 				<div id="midtop_ch1"></div>
-				<a href=""><div id="midtop_ch2"></div></a>
+				<a href="/pinewave_radio.m3u"><div id="midtop_ch2"></div></a>
 				<div id="midtop_ch3"></div>
 			</div>
 			<div id="mid_top2">
