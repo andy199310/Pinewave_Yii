@@ -89,11 +89,12 @@
 }
 
 #next_program_intro{
-	width: 255px;
-	height: 100px;
+	width: 228px;
+	height: 125px;
 	margin-top: 10px;
 	color: white;
-	font-size: 20px;
+	overflow: hidden;
+	font-size: 16px;
 	text-align: left;
 }
 
@@ -191,11 +192,12 @@
 }
 
 #before_program_intro{
-	width: 255px;
-	height: 100px;
+	width: 228px;
+	height: 125px;
 	margin-top: 10px;
 	color: white;
-	font-size: 20px;
+	overflow: hidden;
+	font-size: 16px;
 	text-align: left;
 }
 

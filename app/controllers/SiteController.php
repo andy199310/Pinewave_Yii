@@ -1,6 +1,5 @@
 <?php
 /**
- * Created by IntelliJ IDEA.
  * User: Green
  * Date: 2013/7/26
  * Time: 下午 9:29
@@ -9,6 +8,11 @@
 class SiteController extends CController{
 
 	public $layout = 'site';
+
+	public function init(){
+		$this->pageTitle=Yii::app()->name . '';
+	}
+
 
 	public function actionIndex(){
 
@@ -23,14 +27,17 @@ class SiteController extends CController{
 				$this->redirect($eventData['url']);
 			}
 		}
-		$programModel = new ProgramModel;
-		$tmp = $programModel->getNextProgramId();
-		$data['nextProgram'] = $programModel->getProgramDetailByProgramId($tmp['program']);
-		$tmp = $programModel->getPreviousProgramId();
-		$data['previousProgram'] = $programModel->getProgramDetailByProgramId($tmp['program']);
+
+		$scheduleModel = new ScheduleModel;
+
+		$data['nextProgram'] = $scheduleModel->firstOnAir()->with('data')->find(array('condition' => '`datetime` > NOW()', 'order' => '`datetime` ASC' ));
+		$data['previousProgram'] = $scheduleModel->firstOnAir()->with('data')->find(array('condition' => '`datetime` < NOW()', 'order' => '`datetime` DESC'));
+
 		$bulletinModel = new BulletinModel;
-		$data['bulletinData'] = $bulletinModel->getBulletinMainByCount();
+		$data['bulletinData'] = $bulletinModel->findAll(array('order' => '`id` DESC', 'limit' => '5'));
 		$this->render('index', $data);
+
+//		print_r($data['nextProgram']);
 	}
 
 	public function actionAbout(){
@@ -43,23 +50,44 @@ class SiteController extends CController{
 			$this->redirect('/');
 		}else{
 			$bulletinModel = new BulletinModel;
-			$data['data'] = $bulletinModel->getBulletinDataById($data['id']);
+			$data['data'] = $bulletinModel->findByPk($data['id']);
 			$this->render('bulletin', $data);
 		}
 	}
 
 	public function actionProgram(){
 		$select = Yii::app()->request->getParam('id');
-		if($select == NULL){
+//		$scheduleModel = new ScheduleModel;
+//		$leftData['programsCommon'] = $scheduleModel->firstOnAir()->with('ScheduleLeftData')->findAll(array('limit' => '10', 'order' => 'sid DESC', 'params' => array(':class' => '9')));
+//		$leftData['programsDJFree'] = $scheduleModel->firstOnAir()->with('ScheduleLeftData')->findAll(array('limit' => '10', 'order' => 'sid DESC', 'params' => array(':class' => '10')));
+//		$leftData['programsEvent'] = $scheduleModel->firstOnAir()->with('ScheduleLeftData')->findAll(array('limit' => '10', 'order' => 'sid DESC', 'params' => array(':class' => '8')));
 
-			$data['programLeft'] = $this->renderPartial('_program_left', NULL, true);
+		$programData = new ProgramData;
+		$leftData['programsCommon'] = $programData->findAll(array('order' => 'id DESC', 'limit' => '10', 'condition' => 'class=:class', 'params' => array(':class' => '1')));
+		$leftData['programsDJFree'] = $programData->findAll(array('order' => 'id DESC', 'limit' => '10', 'condition' => 'class=:class', 'params' => array(':class' => '2')));
+		$leftData['programsEvent'] = $programData->findAll(array('order' => 'id DESC', 'limit' => '5', 'condition' => 'class=:class', 'params' => array(':class' => '3')));
+
+		$data['programLeft'] = $this->renderPartial('_program_left', $leftData, true);
+
+		if($select == NULL){
+			$scheduleModel = new ScheduleModel;
+			$data['monthData'] = $scheduleModel->firstOnAir()->monthly()->with('data')->findAll(array('order' => '`datetime` ASC'));
+
 			$this->render('program_schedule', $data);
 		}else{
-			$programModel = new ProgramModel;
-			$data['programData'] = $programModel->getProgramDetailByProgramId($select);
-			$data['programChooseData'] = $programModel->getProgramOnAirList($select);
-			$data['programLeft'] = $this->renderPartial('_program_left', NULL, true);
-			$this->render('program_one', $data);
+			$programData = new ProgramData;
+
+			$data['programData'] = $programData->findByPk($select);
+
+
+			if($data['programData'] != NULL){
+
+				$data['programChooseData'] =  $programData->with('VolumeChooseData')->findByPk($select);
+				$this->render('program_one', $data);
+
+			}else{
+				$this->redirect('/index.php/program');
+			}
 		}
 	}
 
@@ -67,7 +95,19 @@ class SiteController extends CController{
 		$data['year'] = Yii::app()->request->getPost('y');
 		$data['month'] = Yii::app()->request->getPost('m');
 
+
 		if($data['year'] != NULL && $data['month'] != NULL){
+
+			$scheduleModel = new ScheduleModel;
+
+			$y = (string)$data['year'];
+			$m = (string)$data['month'];
+			//$date = date("Y-m-d");
+
+			$tmp = sprintf('%04d-%02d', $y, $m);
+
+			$data['monthData'] = $scheduleModel->firstOnAir()->monthly()->with('data')->findAll(array('order' => '`datetime` ASC', 'params' => array(':month' => '%'.$tmp.'%')));
+
 			$this->renderPartial('_schedule', $data);
 		}else{
 			//error

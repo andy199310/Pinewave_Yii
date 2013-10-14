@@ -14,11 +14,15 @@
 /*-------------------------------------------------------------------------------------------*/
 
 #previous_month{
-	cursor: pointer;
 }
 
 #next_month{
+}
+
+.month_choose{
 	cursor: pointer;
+	margin-left: 460px;
+	width: 50px;
 }
 
 #previous_month:hover{
@@ -36,7 +40,6 @@ div.h2 .date{
 
 #schedule_month{
 	float: left;
-	margin-right: 400px;
 }
 
 #schedule{

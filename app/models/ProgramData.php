@@ -20,6 +20,7 @@ class ProgramData extends CActiveRecord{
 			array('name, dj, class, introduction, simple_intro', 'required','message'=>'{attribute}一定要填','on'=>'add'),
 			array('class', 'exist', 'attributeName'=>'id', 'className'=>'ProgramClassModel'),
 			array('class', 'numerical', 'integerOnly'=>true),
+			array('simple_intro', 'length','min'=>2, 'max'=>90,),
 		);
 	}
 
@@ -36,7 +37,8 @@ class ProgramData extends CActiveRecord{
 
 	public function relations(){
 		return array(
-			'volume' => array(self::HAS_MANY, 'VolumeModel', 'pid'),
+			'volume' => array(self::HAS_MANY, 'VolumeModel', 'pid', 'with' => 'FirstOnAirTime'),
+			'VolumeChooseData' => array(self::HAS_MANY, 'VolumeModel', 'pid', 'with' => 'FirstOnAirTime', 'condition' => 'FirstOnAirTime.`datetime` < NOW()', 'order' => 'FirstOnAirTime.`datetime` ASC'),
 			'class' => array(self::BELONGS_TO, 'ProgramClassModel', array('class' => 'id')),
 		);
 	}

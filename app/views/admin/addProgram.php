@@ -23,7 +23,15 @@
 
 	<div class="row">
 		<?=$form->label($model, 'introduction') ?>
-		<?=$form->textArea($model, 'introduction') ?>
+		<?php
+		$this->widget('application.extensions.ETinyMce',
+			array(
+				'model' => $model,
+				'name' => 'introduction',
+				'attribute' => 'introduction',
+				'editorTemplate' => 'full',
+			));
+		?>
 		<?=$form->error($model, 'introduction') ?>
 	</div>
 

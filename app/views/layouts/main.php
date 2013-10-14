@@ -6,6 +6,7 @@ $cs->registerCoreScript('jquery');
 //$cs->registerCoreScript('jquery.ui');
 $cs->registerScriptFile(Yii::app()->request->baseUrl.'/app/js/hahapo.js');
 $cs->registerScriptFile(Yii::app()->request->baseUrl.'/app/js/main.js');
+
 ?>
 
 <!doctype html>
@@ -22,6 +23,11 @@ $cs->registerScriptFile(Yii::app()->request->baseUrl.'/app/js/main.js');
 		<header id="header">
 			<div id="top_img">
 				<div id="top_link" onclick="window.location='http://radio.pinewave.tw';"></div>
+				<?php
+					if(YII_DEBUG == true){
+						echo '<div style="position: absolute; color: red; font-size: 165px;top: 90px;">這是測試版!!!</div>';
+					}
+				?>
 			</div>
 		</header>
 		<!-- The navigation bar -->

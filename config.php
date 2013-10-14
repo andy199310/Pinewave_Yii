@@ -10,6 +10,7 @@ return array(
 		'application.models.*',
 		'application.components.*',
 		'application.extensions.*',
+//		'application.vendors.phpexcel.PHPExcel',
 	),
 	'components'=> array(
 		'user'          => array(
@@ -31,7 +32,7 @@ return array(
 				// '<controller:\w+>/<id:\d+>/<title:.+>'     => '<controller>/view',
 				//'<controller:\w+>'                			 => '<controller>/index',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'        => '<controller>/<action>',
-				'<controller:\w+>/<action:\w+>/<id:\d+>/<vid:\d+>'        => '<controller>/<action>',
+				'<controller:\w+>/<action:\w+>/<year:\d+>/<month:\d+>'        => '<controller>/<action>',
 				'<controller:\w+>/<action:\w+>/<select:\w+>'    => '<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'                 => '<controller>/<action>'
 			),
@@ -67,12 +68,16 @@ return array(
 	),
 	'params'            => array(
 		'event' => array(
-			'active' => true,
+			'active' => false,
 			'again_time' => 1800,
 			'url' => 'event/2013/fresh/'),
 
 		'programFilePath' => WEB_BASE . '/file/tmp_program/',
+
 		'programImgPath' => '/file/img/program/bar/',
+		'programDefaultImgName' => 'default.jpg',
+
+		'debug_site' => true,
 
 	),
 );

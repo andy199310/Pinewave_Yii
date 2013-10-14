@@ -32,7 +32,4 @@ class FileModel extends CActiveRecord{
 		);
 	}
 
-
-
-
 }

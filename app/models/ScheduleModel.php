@@ -11,7 +11,7 @@ class ScheduleModel extends CActiveRecord{
 	}
 
 	public function tableName(){
-		return 'schedule_new';
+		return 'schedule';
 	}
 
 	public function rules(){
@@ -29,9 +29,22 @@ class ScheduleModel extends CActiveRecord{
 		);
 	}
 
+	public function scopes(){
+		return array(
+			'firstOnAir' => array(
+				'condition' => '`first` = \'1\'',
+			),
+			'monthly' => array(
+				'condition' => '`datetime` LIKE :month',
+				'params' => array(':month' => '%'.date("Y-m").'%'),
+			)
+		);
+	}
+
 	public function relations(){
 		return array(
 			'data' => array(self::BELONGS_TO, 'VolumeModel', array('vid' => 'vid'), 'with' => 'ProgramData'),
+			'ScheduleLeftData' => array(self::BELONGS_TO, 'VolumeModel', array('vid' => 'vid'), 'with' => 'ProgramData', 'condition' => 'ProgramData.class=:class',),
 		);
 	}
 

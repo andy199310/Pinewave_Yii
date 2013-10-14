@@ -11,7 +11,7 @@ $cs->registerCSSFile(Yii::app()->request->baseUrl.'/css/board.css');
 
 $cs->registerScriptFile(Yii::app()->request->baseUrl.'/app/js/board.js');
 
-$pdo_dsn = "mysql:localhost;dbname=radio6";
+$pdo_dsn = "mysql:localhost;dbname=radio";
 $pdo_user = "radio";
 $pdo_password = "radio57261";
 
@@ -31,7 +31,7 @@ function board($DB, $display, $page)
 	$mysql_host = "127.0.0.1"; //資料庫位址
 	$mysql_user = "radio"; //帳號名稱
 	$mysql_password = "radio57261"; //密碼
-	$mysql_database = "radio6"; //資料庫名稱
+	$mysql_database = "radio"; //資料庫名稱
 	if(mysql_connect($mysql_host, $mysql_user, $mysql_password))
 	{
 		mysql_select_db($mysql_database);
@@ -39,8 +39,8 @@ function board($DB, $display, $page)
 	}
 	// MySQL QUERY
 
-	$board_query = "select * from `radio6`.`board` where `fid` = 0 order by `id` desc limit :Page , :Display";
-	$respond_query = "select * from `radio6`.`board` where `fid` = :ID order by `id`";
+	$board_query = "select * from `radio`.`board` where `fid` = 0 order by `id` desc limit :Page , :Display";
+	$respond_query = "select * from `radio`.`board` where `fid` = :ID order by `id`";
 
 	/*--------------------*/
 

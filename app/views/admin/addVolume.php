@@ -26,10 +26,7 @@
 //				'yearRange'=>'2013:2020',
 				'defaultDate'=>'now',
 			),
-//			'htmlOptions'=>array(
-//				'readonly'=>'true',
-//				'onFocus'=>'this.blur()',
-//			),
+			'htmlOptions'=>array('onClick'=>"$('#ui-datepicker-div').css('z-index', '20');"), // fix datepicker so it's always on top
 		)); ?>
 		<?php echo $form->error($model,'datetime'); ?>
 	</div>

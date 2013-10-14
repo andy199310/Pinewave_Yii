@@ -5,7 +5,7 @@ defined('Pinewave') or die();
 $pinewavedb = array(
 	'host'      => 'localhost',
 	'port'      => 3306,
-	'database'  => 'radio6',
+	'database'  => 'radio',
 	'username'  => 'radio',
 	'password'  => 'radio57261'
 );

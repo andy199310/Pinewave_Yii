@@ -20,7 +20,7 @@ echo $form->error($model, 'file');
 // ...
 ?>
 <div class="row buttons">
-        <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+        <?php echo CHtml::submitButton($model->isNewRecord ? '上傳' : '修改'); ?>
 </div>
 <?php
 $this->endWidget();

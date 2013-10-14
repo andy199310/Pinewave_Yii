@@ -2,8 +2,8 @@
 $mainData = array(
 	'1' => 	array(
 		'id' => '500',
-		'link' => 'https://docs.google.com/forms/d/19Uaavc7r0bACw8loa4bASFfqK2mqxdyjlofXAoqD4qc',
-		'time' => '2013-09-02 21:00:00'),
+		'link' => 'https://docs.google.com/forms/d/1BYBP83a_k26KpS24ttXfEbaDJGYEIqtkRrRT8jluKoo',
+		'time' => '2013-09-19 21:00:00'),
 	'2' => array(
 		'id' => '501',
 		'link' => 'https://docs.google.com/forms/d/1wVYPZv7CamBNppSqdqP3xISnqh-6TGGW1ng9WKucJ34',
