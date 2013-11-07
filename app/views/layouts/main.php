@@ -19,7 +19,26 @@ $cs->registerScriptFile(Yii::app()->request->baseUrl.'/app/js/main.js');
 
 	<body id="body">
 		<div id="bkfade"></div>
-		<a href="/pinewave_radio.m3u" target="_blank"><div id="listen_now"></div></a>
+		<div id="listen_now">
+			<script type="text/javascript" src="http://www.museter.com/mrp.js"></script>
+			<script type="text/javascript">
+				MRP.insert({
+					'url':'http://broadcast.pinewave.tw:8000/;',
+					'codec':'mp3',
+					'volume':100,
+					'autoplay':false,
+					'jsevents':true,
+					'buffering':5,
+					'title':'Pinewave Radio',
+					'welcome':'Pinewave Radio',
+					'wmode':'transparent',
+					'skin':'mcclean',
+					'width':0,
+					'height':0
+				});
+			</script>
+
+		</div>
 		<header id="header">
 			<div id="top_img">
 				<div id="top_link" onclick="window.location='http://radio.pinewave.tw';"></div>

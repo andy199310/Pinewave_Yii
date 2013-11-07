@@ -38,7 +38,7 @@ class ProgramData extends CActiveRecord{
 	public function relations(){
 		return array(
 			'volume' => array(self::HAS_MANY, 'VolumeModel', 'pid', 'with' => 'FirstOnAirTime'),
-			'VolumeChooseData' => array(self::HAS_MANY, 'VolumeModel', 'pid', 'with' => 'FirstOnAirTime', 'condition' => 'FirstOnAirTime.`datetime` < NOW()', 'order' => 'FirstOnAirTime.`datetime` ASC'),
+			'VolumeChooseData' => array(self::HAS_MANY, 'VolumeModel', 'pid', 'with' => 'FirstOnAirTime', 'condition' => 'FirstOnAirTime.`datetime` < NOW() - INTERVAL 2 HOUR', 'order' => 'FirstOnAirTime.`datetime` ASC'),
 			'class' => array(self::BELONGS_TO, 'ProgramClassModel', array('class' => 'id')),
 		);
 	}

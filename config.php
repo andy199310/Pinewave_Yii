@@ -72,10 +72,10 @@ return array(
 			'again_time' => 1800,
 			'url' => 'event/2013/fresh/'),
 
-		'programFilePath' => WEB_BASE . '/file/tmp_program/',
+		'programFilePath' => WEB_BASE . '/file/program/',
 
 		'programImgPath' => '/file/img/program/bar/',
-		'programDefaultImgName' => 'default.jpg',
+		'programDefaultImgName' => 'default.png',
 
 		'debug_site' => true,
 

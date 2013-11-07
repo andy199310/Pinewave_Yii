@@ -577,7 +577,11 @@ class AdminController extends CController{
 
 	public function actionMakePAL(){
 
+		$errorMsg = "";
+
 		$programPath = "Y:\\";
+
+		$programPathLinux = Yii::app()->params['programFilePath'];
 
 		$filePath = "/home/radio/sam/";
 
@@ -599,6 +603,13 @@ class AdminController extends CController{
 			$tmp = "";
 			if($data != NULL){
 				$tmp = $programPath.$data->vid.'.mp3';
+
+				if(file_exists($programPathLinux.$data->vid.'.mp3') == true ){
+
+				}else{
+					$errorMsg .= "File ".$data->vid.'.mp3('.") doesn't exist\n";
+					echo "File ".$data->vid.'.mp3'." doesn't exist";
+				}
 
 			}else if ($i <= 5 || $i > 19){
 				//night
@@ -623,6 +634,45 @@ class AdminController extends CController{
 
 		echo "Content: <br>" . nl2br($contents);
 		file_put_contents($filePath.$fileName, $contents);
+
+
+
+		$email = "Green <andy199310@gmail.com>, Pinewave <pinewave.radio@gmail.com>";
+
+		$subject =  "=?UTF-8?B?".base64_encode("松濤電台自動化系統確認信")."?=";
+
+		$header  = 'MIME-Version: 1.0' . "\r\n";$header .= 'From: 松濤電台專業導播<no-reply@pinewave.tw>' . "\r\n";
+		$header .= 'Content-Type:text/html; charset=utf-8 \r\n';
+
+
+		$message = "<h1>松濤電台自動化系統確認信</h1>";
+		$message .= "<h3>處理日期: ".date("Y-m-d", mktime(0, 0, 0, date("m"), date("d")+1, date("Y")))."($fileName)</h3>";
+		$message .= "<h4>錯誤訊息</h4>";
+		if($errorMsg == ""){
+			$message .= "<div style=\"color:green\">沒有錯誤</div>";
+		}else{
+			$message .= "<div style=\"color:red\">".nl2br($errorMsg)."</div>";
+		}
+
+		$message .= "<br><br><br>";
+		$message .= "<h4>".date("Y-m-d", mktime(0, 0, 0, date("m"), date("d")+1, date("Y")))."($fileName)檔案</h4>";
+		$message .= nl2br($contents);
+
+		$message .= "<br>=====================End of file=====================<br>";
+
+		$message .= "System time: " .date("Y-m-d H:i:s")."";
+
+		$message .= "<br>=====================End of mail=====================<br>";
+
+
+
+		$back = mail($email, $subject, $message, $header);
+
+		if($back == true){
+			echo "SEND SUCCESS";
+		}else{
+			echo "SEND FAILED";
+		}
 
 
 	}

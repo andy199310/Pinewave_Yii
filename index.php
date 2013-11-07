@@ -8,7 +8,7 @@
 
 defined('Pinewave') or define('Pinewave',true);
 
-defined('YII_DEBUG') or define('YII_DEBUG',true);
+defined('YII_DEBUG') or define('YII_DEBUG',false);
 ini_set("display_errors", "On");
 
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL', 3);
@@ -17,9 +17,9 @@ defined('WEB_BASE') or define('WEB_BASE', dirname(__FILE__));
 
 require_once(require_once('pinewave.php'));
 
-$white_IP = array('114.34.34.83', '140.115.232.33', "140.115.183.156", '140.115.189.100');
+$white_IP = array('114.34.34.83', '140.115.232.33', "140.115.183.156", '140.115.189.100', '140.115.179.198');
 
-if(in_array($_SERVER['REMOTE_ADDR'], $white_IP) || YII_DEBUG == false ){
+//if(in_array($_SERVER['REMOTE_ADDR'], $white_IP) || YII_DEBUG == false ){
 	$app = Yii::createWebApplication('config.php');
 
 	Yii::import('application.extensions.YiiExcel', true);
@@ -39,7 +39,7 @@ if(in_array($_SERVER['REMOTE_ADDR'], $white_IP) || YII_DEBUG == false ){
 	$app->run();
 
 
-}
-else{
+//}
+/*else{
 	header( 'Location: http://radio.pinewave.tw/index.html' ) ;
-}
+}*/
